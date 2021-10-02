@@ -1,0 +1,649 @@
+{% extends 'shared/_MainLayout.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+    <!--header section-->
+<section class="header-section">
+    <div class="hero">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+    <div class="center-div">
+        <div class="myContainer d-flex align-items-start align-items-lg-center mt-4 mt-lg-0 h-100 ">
+            <div class="col-xl-6 col-lg-5 col-md-12 col-12">
+                <div class="carousel-text" style="opacity: 0; height: 0px;">
+                    <h1 class="text-center text-lg-right">
+                        <span>تم شاپ</span>
+                        و استاندارد
+                    </h1>
+                    <p class="mt-3 text-center text-lg-right">حرفه‌ای ترین قالب‌ها را از طراحان و کدنویسان مجرب و متعهد
+                        بخواهید.</p>
+                </div>
+                <div class="carousel-text" style="opacity: 0; height: 0px;">
+                    <h1 class="text-center text-lg-right">
+                        <span>Theme Shop</span>
+                        مجموعه‌ای از برترین قالب‌های حرفه‌ای و استاندارد
+                    </h1>
+                    <p class="mt-3 text-center text-lg-right">حرفه‌ای ترین قالب‌ها را از طراحان
+                        بخواهید.</p>
+                </div>
+                <div class="carousel-text" style="opacity: 1; height: auto;">
+                    <h1 class="text-center text-lg-right">
+                        <span>تم‌شاپ</span>
+                        مجموعه‌ای از برترین قالب‌های حرفه‌ای و استاندارد
+                    </h1>
+                    <p class="mt-3 text-center text-lg-right"> قالب‌ها را از طراحان و کدنویسان مجرب
+                        بخواهید.</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-7 col-md-12 col-12">
+                <div class="slider-container">
+                    <figure id="carousel--3d">
+                        <input type="radio" name="carousel-3d" class="d-none" id="carousel-3d-controller-1">
+                        <input type="radio" name="carousel-3d" class="d-none" id="carousel-3d-controller-2">
+                        <input type="radio" name="carousel-3d" class="d-none" id="carousel-3d-controller-3" checked="checked">
+                        <label for="carousel-3d-controller-1" class="carousel-3d-item">
+                            <div class="slide-img">
+                                <img src="{% static 'img/theme-image.png' %}" alt="">
+                            </div>
+                        </label>
+
+                        <label for="carousel-3d-controller-2" class="carousel-3d-item">
+                            <div class="slide-img">
+                                <img src="{% static 'img/them-sample.png' %}" alt="">
+                            </div>
+                        </label>
+
+                        <label for="carousel-3d-controller-3" class="carousel-3d-item">
+                            <div class="slide-img">
+                                <img src="{% static 'img/theme-image.png' %}" alt=""></div>
+                        </label>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end header section-->
+
+<!--top categories-->
+<section class="top-categories">
+    <div class="myContainer">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <a href="">
+                <div class="category-box">
+                    <div class="category-header">
+                        <div>
+                            <img src="{% static 'img/store-category.svg' %}" class="img-fluid" alt="word">
+                        </div>
+                        <h2 class="mb-4 text-title">قالب‌های فروشگاهی</h2>
+                    </div>
+                    <img src="{% static 'img/them-sample.png' %}" class="img-fluid" alt="news category">
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-5 mt-sm-0">
+            <a href="">
+                <div class="category-box">
+                    <div class="category-header">
+                        <div>
+                            <img src="{% static 'img/company-category.svg' %}" class="img-fluid" alt="word">
+                        </div>
+                        <h2 class="mb-4 text-title">قالب‌های شرکتی</h2>
+                    </div>
+                    <img src="{% static 'img/theme-image.png' %}" class="img-fluid" alt="news category">
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-5 mt-lg-0 d-none d-lg-block">
+            <a href="">
+                <div class="category-box">
+                    <div class="category-header">
+                        <div>
+                            <img src="{% static 'img/world.svg' %}" class="img-fluid" alt="word">
+                        </div>
+                        <h2 class="mb-4 text-title">قالب‌های خبری</h2>
+                    </div>
+                    <img src="{% static 'img/them-sample.png' %}" class="img-fluid" alt="news category">
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<!--end top categories-->
+
+<!--new themes-->
+<section class="new-themes mt-5">
+    <div class="myContainer d-flex align-items-center justify-content-between">
+        <h1 class="text-title">جدیدترین قالب‌ها</h1>
+        <div class="see-all-div">
+            <ul>
+                <li>
+                    <a href="#" id="next-owl">
+                        <i class="ti-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="prev-owl">
+                        <i class="ti-angle-left"></i>
+                    </a>
+                </li>
+            </ul>
+            <a href="/products/" class="all-them-link">مشاهده تمام قالب‌ها</a>
+        </div>
+    </div>
+
+    <div class="myContainer mt-2">
+        <div class="owl-carousel owl-rtl owl-loaded owl-drag" id="owl-carousel">
+
+
+        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(1311px, 0px, 0px); transition: all 2s ease 0s; width: 3277px;"><div class="owl-item cloned" style="width: 327.7px;"><div class="col-12 py-1">
+                <div class="box shadow-sm">
+                    <img src="{% static 'img/theme-image.png' %}" class="img-fluid" alt="">
+                    <a href="">
+                        <h2 class="text-title mr-3 mt-3">قالب سلین</h2>
+                    </a>
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'img/category.svg' %}" alt="">
+                                <p class="mr-2 text-sm text-gray">سایت فروشگاهی</p>
+                            </div>
+                            <p class="mt-2 text-sm text-gray">طراح قالب : محمد حسن مرامی</p>
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <h2 class="discount mt-auto text-left text-lg">1,000,000 تومان</h2>
+                            <h2 class="price mt-auto text-left text-lg">1,000,000 تومان</h2>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 ">
+                            <div class="row justify-content-around h-100 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/eye.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/download.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row h-100 align-content-end justify-content-end">
+                                <a href="#" class="btn btn-sm text-md add-to-cart-btn px-3 py-2">افزودن به
+                                    سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 327.7px;"><div class="col-12 py-1">
+                <div class="box shadow-sm">
+                    <img src="{% static 'img/them-sample.png' %}" class="img-fluid" alt="">
+                    <a href="">
+                        <h2 class="text-title mr-3 mt-3">قالب سلین</h2>
+                    </a>
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'img/category.svg' %}" alt="">
+                                <p class="mr-2 text-sm text-gray">سایت فروشگاهی</p>
+                            </div>
+                            <p class="mt-2 text-sm text-gray">طراح قالب : محمد حسن مرامی</p>
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <!--                            <h2 class="discount mt-auto text-left text-lg">1,000,000 تومان</h2>-->
+                            <h2 class="price mt-auto text-left text-lg">1,000,000 تومان</h2>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 ">
+                            <div class="row justify-content-around h-100 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/eye.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/download.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row h-100 align-content-end justify-content-end">
+                                <a href="#" class="btn btn-sm text-md add-to-cart-btn px-3 py-2">افزودن به
+                                    سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 327.7px;"><div class="col-12 py-1">
+                <div class="box shadow-sm">
+                    <img src="{% static 'img/theme-image.png' %}" class="img-fluid" alt="">
+                    <a href="">
+                        <h2 class="text-title mr-3 mt-3">قالب سلین</h2>
+                    </a>
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'img/category.svg' %}" alt="">
+                                <p class="mr-2 text-sm text-gray">سایت فروشگاهی</p>
+                            </div>
+                            <p class="mt-2 text-sm text-gray">طراح قالب : محمد حسن مرامی</p>
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <h2 class="discount mt-auto text-left text-lg">1,000,000 تومان</h2>
+                            <h2 class="price mt-auto text-left text-lg">1,000,000 تومان</h2>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 ">
+                            <div class="row justify-content-around h-100 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/eye.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/download.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row h-100 align-content-end justify-content-end">
+                                <a href="#" class="btn btn-sm text-md add-to-cart-btn px-3 py-2">افزودن به
+                                    سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 327.7px;"><div class="col-12 py-1">
+                <div class="box shadow-sm">
+                    <img src="{% static 'img/them-sample.png' %}" class="img-fluid" alt="">
+                    <a href="">
+                        <h2 class="text-title mr-3 mt-3">قالب سلین</h2>
+                    </a>
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'img/category.svg' %}" alt="">
+                                <p class="mr-2 text-sm text-gray">سایت فروشگاهی</p>
+                            </div>
+                            <p class="mt-2 text-sm text-gray">طراح قالب : محمد حسن مرامی</p>
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <!--                            <h2 class="discount mt-auto text-left text-lg">1,000,000 تومان</h2>-->
+                            <h2 class="price mt-auto text-left text-lg">1,000,000 تومان</h2>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 ">
+                            <div class="row justify-content-around h-100 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/eye.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/download.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row h-100 align-content-end justify-content-end">
+                                <a href="#" class="btn btn-sm text-md add-to-cart-btn px-3 py-2">افزودن به
+                                    سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item active" style="width: 327.7px;"><div class="col-12 py-1">
+                <div class="box shadow-sm">
+                    <img src="{% static 'img/theme-image.png' %}" class="img-fluid" alt="">
+                    <a href="">
+                        <h2 class="text-title mr-3 mt-3">قالب سلین</h2>
+                    </a>
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'img/category.svg' %}" alt="">
+                                <p class="mr-2 text-sm text-gray">سایت فروشگاهی</p>
+                            </div>
+                            <p class="mt-2 text-sm text-gray">طراح قالب : محمد حسن مرامی</p>
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <h2 class="discount mt-auto text-left text-lg">1,000,000 تومان</h2>
+                            <h2 class="price mt-auto text-left text-lg">1,000,000 تومان</h2>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 ">
+                            <div class="row justify-content-around h-100 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/eye.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/download.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row h-100 align-content-end justify-content-end">
+                                <a href="#" class="btn btn-sm text-md add-to-cart-btn px-3 py-2">افزودن به
+                                    سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item active" style="width: 327.7px;"><div class="col-12 py-1">
+                <div class="box shadow-sm">
+                    <img src="{% static 'img/them-sample.png' %}" class="img-fluid" alt="">
+                    <a href="">
+                        <h2 class="text-title mr-3 mt-3">قالب سلین</h2>
+                    </a>
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'img/category.svg' %}" alt="">
+                                <p class="mr-2 text-sm text-gray">سایت فروشگاهی</p>
+                            </div>
+                            <p class="mt-2 text-sm text-gray">طراح قالب : محمد حسن مرامی</p>
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <!--                            <h2 class="discount mt-auto text-left text-lg">1,000,000 تومان</h2>-->
+                            <h2 class="price mt-auto text-left text-lg">1,000,000 تومان</h2>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 ">
+                            <div class="row justify-content-around h-100 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/eye.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/download.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row h-100 align-content-end justify-content-end">
+                                <a href="#" class="btn btn-sm text-md add-to-cart-btn px-3 py-2">افزودن به
+                                    سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned active" style="width: 327.7px;"><div class="col-12 py-1">
+                <div class="box shadow-sm">
+                    <img src="{% static 'img/theme-image.png' %}" class="img-fluid" alt="">
+                    <a href="">
+                        <h2 class="text-title mr-3 mt-3">قالب سلین</h2>
+                    </a>
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'img/category.svg' %}" alt="">
+                                <p class="mr-2 text-sm text-gray">سایت فروشگاهی</p>
+                            </div>
+                            <p class="mt-2 text-sm text-gray">طراح قالب : محمد حسن مرامی</p>
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <h2 class="discount mt-auto text-left text-lg">1,000,000 تومان</h2>
+                            <h2 class="price mt-auto text-left text-lg">1,000,000 تومان</h2>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 ">
+                            <div class="row justify-content-around h-100 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/eye.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/download.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row h-100 align-content-end justify-content-end">
+                                <a href="#" class="btn btn-sm text-md add-to-cart-btn px-3 py-2">افزودن به
+                                    سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned active" style="width: 327.7px;"><div class="col-12 py-1">
+                <div class="box shadow-sm">
+                    <img src="{% static 'img/them-sample.png' %}" class="img-fluid" alt="">
+                    <a href="">
+                        <h2 class="text-title mr-3 mt-3">قالب سلین</h2>
+                    </a>
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'img/category.svg' %}" alt="">
+                                <p class="mr-2 text-sm text-gray">سایت فروشگاهی</p>
+                            </div>
+                            <p class="mt-2 text-sm text-gray">طراح قالب : محمد حسن مرامی</p>
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <!--                            <h2 class="discount mt-auto text-left text-lg">1,000,000 تومان</h2>-->
+                            <h2 class="price mt-auto text-left text-lg">1,000,000 تومان</h2>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 ">
+                            <div class="row justify-content-around h-100 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/eye.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/download.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row h-100 align-content-end justify-content-end">
+                                <a href="#" class="btn btn-sm text-md add-to-cart-btn px-3 py-2">افزودن به
+                                    سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned active" style="width: 327.7px;"><div class="col-12 py-1">
+                <div class="box shadow-sm">
+                    <img src="{% static 'img/theme-image.png' %}" class="img-fluid" alt="">
+                    <a href="">
+                        <h2 class="text-title mr-3 mt-3">قالب سلین</h2>
+                    </a>
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'img/category.svg' %}" alt="">
+                                <p class="mr-2 text-sm text-gray">سایت فروشگاهی</p>
+                            </div>
+                            <p class="mt-2 text-sm text-gray">طراح قالب : محمد حسن مرامی</p>
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <h2 class="discount mt-auto text-left text-lg">1,000,000 تومان</h2>
+                            <h2 class="price mt-auto text-left text-lg">1,000,000 تومان</h2>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 ">
+                            <div class="row justify-content-around h-100 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/eye.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/download.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row h-100 align-content-end justify-content-end">
+                                <a href="#" class="btn btn-sm text-md add-to-cart-btn px-3 py-2">افزودن به
+                                    سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 327.7px;"><div class="col-12 py-1">
+                <div class="box shadow-sm">
+                    <img src="{% static 'img/them-sample.png' %}" class="img-fluid" alt="">
+                    <a href="">
+                        <h2 class="text-title mr-3 mt-3">قالب سلین</h2>
+                    </a>
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'img/category.svg' %}" alt="">
+                                <p class="mr-2 text-sm text-gray">سایت فروشگاهی</p>
+                            </div>
+                            <p class="mt-2 text-sm text-gray">طراح قالب : محمد حسن مرامی</p>
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <!--                            <h2 class="discount mt-auto text-left text-lg">1,000,000 تومان</h2>-->
+                            <h2 class="price mt-auto text-left text-lg">1,000,000 تومان</h2>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 ">
+                            <div class="row justify-content-around h-100 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/eye.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="{% static 'img/download.svg' %}" class="img-sm" alt="">
+                                    <span class="text-gray mr-2 text-v-sm">2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row h-100 align-content-end justify-content-end">
+                                <a href="#" class="btn btn-sm text-md add-to-cart-btn px-3 py-2">افزودن به
+                                    سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+    </div>
+</section>
+<!--end new themes-->
+
+<!--mid banner-->
+<section class="header-section flex-row mid-banner mt-5">
+    <div class="d-flex flex-wrap align-items-center justify-content-center">
+        <div class="col-lg-6 col-md-6">
+            <div class="border-box mx-auto">
+                <img src="{% static 'img/1.png' %}" alt="">
+                <img src="{% static 'img/2.png' %}" alt="">
+                <img src="{% static 'img/3.png' %}" alt="">
+                <img src="{% static 'img/4.png' %}" alt="">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <div class="d-flex flex-column h-100 justify-content-center">
+                <span class="title-xl font-weight-normal">
+                    تم ها و الگو های منحصر به فرد برای <span class="font-weight-bold title-xl">هر بودجه و هر پروژه</span>
+            </span>
+                <div class="mt-5">
+                    <a href="products/" class="btn-all text-title">مشاهده همه قالب ها</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end mid banner-->
+
+<!--bottom category-->
+<section class="bottom-category-section">
+    <div class="myContainer mt-5">
+        <div class="bottom-category">
+            <div class="nav nav-tabs">
+                <a class="bottom-category-box text-title active " data-toggle="tab" href="#category-1" role="tab" aria-controls="category-1" aria-selected="true">
+                    قالب‌های Html
+                </a>
+                <a class="bottom-category-box text-title " data-toggle="tab" href="#category-2" role="tab" aria-controls="category-1" aria-selected="true">
+                    قالب‌های وردپرس
+                </a>
+                <a class="bottom-category-box text-title " data-toggle="tab" href="#category-3" role="tab" aria-controls="category-1" aria-selected="true">
+                    قالب‌های وردپرس
+                </a>
+                <a class="bottom-category-box text-title " data-toggle="tab" href="#category-4" role="tab" aria-controls="category-1" aria-selected="true">
+                    قالب‌های وردپرس
+                </a>
+                <a class="bottom-category-box text-title " data-toggle="tab" href="#category-5" role="tab" aria-controls="category-1" aria-selected="true">
+                    قالب‌های وردپرس
+                </a>
+                <a class="bottom-category-box text-title " data-toggle="tab" href="#category-6" role="tab" aria-controls="category-1" aria-selected="true">
+                    قالب‌های وردپرس
+                </a>
+
+                <div class="see-all-div mr-auto">
+                    <a href="/products/" class="all-them-link">مشاهده تمام قالب‌ها</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content">
+
+
+
+            <div class="tab-pane fade show active" id="category-1">
+
+
+                <div class="d-flex flex-wrap w-100 add-owl row m-0">
+                    {% for products in product%}
+
+
+                        {% include 'product/product_item_component.html' with product=products %}
+
+                    {% endfor %}
+
+
+
+</section>
+<!--end bottom category-->
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% load render_partial %}
+{% load static %}
+
+<html dir="rtl" lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Theme Shop</title>
+    {% include 'shared/_HeaderRefrences.html' %}
+</head>
+<body>
+<!--navbar-->
+{% render_partial 'header' %}
+<!--end navbar-->
+{% block content %}
+
+{% endblock %}
+
+
+{% render_partial 'footer' %}
+{% include 'shared/_FooterRefrences.html' %}
+
+</body></html>

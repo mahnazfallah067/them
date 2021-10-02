@@ -1,0 +1,107 @@
+{% extends 'shared/_MainLayout.html' %}
+{% load static %}
+{% block content %}
+    <div class="d-flex align-items-center justify-content-center position-relative over-flow">
+    <img class="icon-login" src="{% static 'img/1.svg' %}" alt="">
+    <img class="icon-login2" src="{% static 'img/2.svg' %}" alt="">
+    <img class="icon-login3" src="{% static 'img/3.svg' %}" alt="">
+    <img class="icon-login4" src="{% static 'img/4.svg' %}" alt="">
+    <img class="icon-login5" src="{% static 'img/5.svg' %}" alt="">
+    <img class="icon-login6" src="{% static 'img/6.svg' %}" alt="">
+    <img class="icon-login7" src="{% static 'img/7.svg' %}" alt="">
+    <img class="icon-login8" src="{% static 'img/8.svg' %}" alt="">
+    <img class="icon-login9" src="{% static 'img/9.svg' %}" alt="">
+    <img class="icon-login10" src="{% static 'img/10.svg' %}" alt="">
+    <img class="icon-login11" src="{% static 'img/11.svg' %}" alt="">
+    <img class="icon-login12" src="{% static 'img/12.svg' %}" alt="">
+    <div class=" col-sm-12 col-md-9 col-lg-7 col-xl-5 position-relative px-login">
+        <img class="position-absolute-before animated zoomIn delay-1s " src="{% static 'img/before-login.png' %}" alt="">
+        <div class="border border-radius  my-5 px-0 bg-login-box">
+            <div class="w-100 text-center py-4">
+                <img src="{% static 'img/img-login.svg' %}" alt="" width="220">
+            </div>
+            <div class="text-center title-blog p-3">
+                <strong class="pr-2">ثبت نام در وب سایت</strong>
+            </div>
+            <form action="" method="post">
+                <div class="col-12 my-3">
+                    <label class=" d-flex align-items-center" for="name"> <i class="ti-email text-gray text-title ml-2"></i> نام و نام خانوادگی </label>
+{#                    <input class="form-control  py-4" name="name" id="name" type="text" placeholder="نام و نام خانوادگی خود را وارد کنید">#}
+                    {% csrf_token %}
+
+                    {{ register_form.username }}
+                    {% for error in register_form.username.errors  %}
+                        <span style="color: red">{{ error }}</span>
+
+                    {% endfor %}
+                </div>
+                <div class="col-12 my-3">
+                    <label class=" d-flex align-items-center" for="email"> <i class="ti-email text-gray text-title ml-2"></i> پست الکترونیک </label>
+{#                    <input class="form-control  py-4" name="email" id="email" type="text" placeholder="پست الکترونیک خود را وارد کنید">#}
+                    {{ register_form.email }}
+                    {% for error in register_form.email.errors  %}
+                        <span style="color: red">{{ error }}</span>
+
+                    {% endfor %}
+                </div>
+
+                <div class="col-12 my-3">
+                    <label class=" d-flex align-items-center" for="password"> <i class="ti-lock text-gray text-title ml-2"></i> رمز عبور </label>
+{#                    <input class="form-control  py-4" name="password" id="password" type="text" placeholder="رمز عبور خود را وراد کنید">#}
+                    {{ register_form.password }}
+                    {% for error in register_form.password.errors  %}
+                        <span style="color: red">{{ error }}</span>
+
+                    {% endfor %}
+                </div>
+                <div class="col-12 my-3">
+                    <label class=" d-flex align-items-center" for="again_password"> <i class="ti-lock text-gray text-title ml-2"></i>تکرار رمز عبور </label>
+{#                    <input class="form-control  py-4" name="again_password" id="again_password" type="text" placeholder=" تکرار رمز عبور خود را وراد کنید">#}
+                    {{ register_form.re_password }}
+                    {% for error in register_form.re_password.errors  %}
+                        <span style="color: red">{{ error }}</span>
+
+                    {% endfor %}
+                </div>
+                <!--captcha-->
+                <!--
+         <div class="captcha mx-3">
+             <div class="spinner">
+                 <label>
+                     <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
+                     <span class="checkmark"><span>&nbsp;</span></span>
+                 </label>
+             </div>
+             <div class="text mr-2">
+                 من ربات نیستم
+             </div>
+             <div class="logo mr-auto">
+                 <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/"/>
+                 <p>reCAPTCHA</p>
+                 <small>حریم خصوصی - شرایط</small>
+             </div>
+         </div>
+-->
+                <!--end-captcha-->
+                <div class="d-flex align-items-center justify-content-between flex-wrap px-3">
+                    <a href="/login" class="text-md text-green py-2">ورود به سایت</a>
+{#                    <div class="check-filter py-2">#}
+{#                        <input type="checkbox" id="remember" name="remember">#}
+{#                        <label class="m-0 text-md" for="remember">قوانین و شرایط را پذیرفته ام </label>#}
+{#                    </div>#}
+                </div>
+                <div class="px-3">
+                    <button class="btn-all btn link mt-4 d-block w-100 text-center">ثبت نام در سایت</button>
+                    <div class="position-relative-border mt-5">
+                        <p class="m-0 text-gray text-md">ورود با اکانت</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-xl-center my-4">
+                        <a class="ml-2" href=""><img src="{% static 'img/facebook.svg' %}" alt=""></a>
+                        <a class="mr-2" href=""><img src="{% static 'img/google.svg' %}" alt=""></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

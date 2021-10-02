@@ -1,0 +1,50 @@
+{% extends 'shared/_MainLayout.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="myContainer mt-5">
+    <div class="row w-100 align-items-center">
+        <div class="col-12 col-md-6 over-flow">
+            <h6 class="text-large text-center w-auto  wow fadeInRightBig animated" style="visibility: visible; animation-name: fadeInRightBig;">{{ guide.title }}</h6>
+        </div>
+        <div class="col-12 col-md-6 text-center mt-4 mt-md-0 over-flow">
+            <img src="{% static 'img/shopping-guide.svg' %}" alt="" class="wow fadeInLeftBig animated" style="visibility: visible; animation-name: fadeInLeftBig;" width="300">
+        </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <div class="row flex-nowrap align-items-center  wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+            <div class="box-circle">
+                <span class="circle-counter px-0">1</span>
+            </div>
+            <p class=" text-gray text-md mr-3">
+                {{ guide.guide1 }}
+            </p>
+        </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <div class="row flex-nowrap align-items-center  wow fadeIn delay-1s animated" style="visibility: visible; animation-name: fadeIn;">
+            <div class="box-circle">
+                <span class="circle-counter px-0">2</span>
+            </div>
+            <p class="text-gray text-md d-flex flex-wrap mr-3">
+                {{ guide.guide2 }}
+            </p>
+        </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <div class="row flex-nowrap align-items-center  wow fadeIn delay-2s animated" style="visibility: visible; animation-name: fadeIn;">
+            <div class="box-circle">
+                <span class="circle-counter px-0">3</span>
+            </div>
+            <p class="text-gray text-md mr-3">
+                {{ guide.guide3 }}
+
+            </p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,594 @@
+{% extends 'shared/_MainLayout.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="myContainer pt-5">
+
+    <div class="col-12 px-0">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3 order-1 order-md-0 mt-4 mt-lg-0">
+                <div class="d-flex align-items-center justify-content-between pb-4">
+                    <strong class="text-title">فیلتر</strong>
+                    <button class="btn bg-transparent text-md text-green p-0" id="clear-checked">پاک کردن فیلتر ها
+                    </button>
+                </div>
+                <div class="border-bottom-green"></div>
+                <div class="shadow-sm border-radius text-center py-3 mt-2">
+                    <strong class="text-title ">همه دسته بندی ها</strong>
+                </div>
+                <div class="d-flex flex-column">
+                    <ul class="accordion mt-2 mr-0 pr-0" id="accordionfiltering">
+                        <li class="shadow-sm border-radius text-center py-3 mt-3 height-filtering">
+                            <div class="d-flex align-items-center dir-rtl">
+                                <a class="d-flex justify-content-between mr-3 w-100" href="" data-toggle="collapse" data-target="#category_filter1">
+                                    <p class="m-0 title-blog">قالب Html</p>
+                                    <i class="ti-angle-up mr-auto ml-3 title-blog"></i>
+                                </a>
+                            </div>
+                            <ul class="collapse show pr-2 text-right" data-parent="#accordionfiltering" id="category_filter1">
+                                <form class="py-3 px-2 dir-rtl" action="">
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input checked="" type="checkbox" id="filter1" name="filter1">
+                                            <label class="text-sm" for="filter1">سایت تک صفحه ای</label>
+                                        </div>
+                                        <p class="m-0 pl-1">107</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter2" name="filter1">
+                                            <label class="text-sm" for="filter2">سایت چند منظوره</label>
+                                        </div>
+                                        <p class="m-0 pl-1">18</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter3" name="filter1">
+                                            <label class="text-sm" for="filter3">سایت تجاری و شرکتی</label>
+                                        </div>
+                                        <p class="m-0 pl-1">81</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter4" name="filter1">
+                                            <label class="text-sm" for="filter4">سایت نمونه کار و گالری</label>
+                                        </div>
+                                        <p class="m-0 pl-1">667</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter5" name="filter1">
+                                            <label class="text-sm" for="filter5">سایت موزیک فیلم</label>
+                                        </div>
+                                        <p class="m-0 pl-1">34</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter6" name="filter1">
+                                            <label class="text-sm" for="filter6">سایت شخصی</label>
+                                        </div>
+                                        <p class="m-0 pl-1">22</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter7" name="filter1">
+                                            <label class="text-sm" for="filter7">سایت املاک </label>
+                                        </div>
+                                        <p class="m-0 pl-1">227</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter8" name="filter1">
+                                            <label class="text-sm" for="filter8">سایت هتل و رستوران</label>
+                                        </div>
+                                        <p class="m-0 pl-1">17</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter9" name="filter1">
+                                            <label class="text-sm" for="filter9">سایت هاستینگ</label>
+                                        </div>
+                                        <p class="m-0 pl-1">117</p>
+
+                                    </div>
+                                </form>
+                            </ul>
+                        </li>
+                        <li class="shadow-sm border-radius text-center py-3 mt-3 height-filtering">
+                            <div class="d-flex align-items-center dir-rtl">
+                                <a class="d-flex justify-content-between mr-3 w-100" href="" data-toggle="collapse" data-target="#category_filter2">
+                                    <p class="m-0 title-blog">قالب Wordpress</p>
+                                    <i class="ti-angle-up mr-auto ml-3 title-blog"></i>
+                                </a>
+                            </div>
+                            <ul class="collapse pr-2" data-parent="#accordionfiltering" id="category_filter2">
+                                <form class="py-3 px-2 dir-rtl" action="">
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input checked="" type="checkbox" id="filter10" name="filter1">
+                                            <label class="text-sm" for="filter10">سایت تک صفحه ای</label>
+                                        </div>
+                                        <p class="m-0 pl-1">107</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter11" name="filter1">
+                                            <label class="text-sm" for="filter11">سایت چند منظوره</label>
+                                        </div>
+                                        <p class="m-0 pl-1">18</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter12" name="filter1">
+                                            <label class="text-sm" for="filter12">سایت تجاری و شرکتی</label>
+                                        </div>
+                                        <p class="m-0 pl-1">81</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter13" name="filter1">
+                                            <label class="text-sm" for="filter13">سایت نمونه کار و گالری</label>
+                                        </div>
+                                        <p class="m-0 pl-1">667</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter14" name="filter1">
+                                            <label class="text-sm" for="filter14">سایت موزیک فیلم</label>
+                                        </div>
+                                        <p class="m-0 pl-1">34</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter15" name="filter1">
+                                            <label class="text-sm" for="filter15">سایت شخصی</label>
+                                        </div>
+                                        <p class="m-0 pl-1">22</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter16" name="filter1">
+                                            <label class="text-sm" for="filter16">سایت املاک </label>
+                                        </div>
+                                        <p class="m-0 pl-1">227</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter17" name="filter1">
+                                            <label class="text-sm" for="filter17">سایت هتل و رستوران</label>
+                                        </div>
+                                        <p class="m-0 pl-1">17</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter18" name="filter1">
+                                            <label class="text-sm" for="filter18">سایت هاستینگ</label>
+                                        </div>
+                                        <p class="m-0 pl-1">117</p>
+
+                                    </div>
+                                </form>
+
+                            </ul>
+                        </li>
+                        <li class="shadow-sm border-radius text-center py-3 mt-3 height-filtering">
+                            <div class="d-flex align-items-center dir-rtl">
+                                <a class="d-flex justify-content-between mr-3 w-100" href="" data-toggle="collapse" data-target="#category_filter3">
+                                    <p class="m-0 title-blog">افزونه های wordpress</p>
+                                    <i class="ti-angle-up mr-auto ml-3 title-blog"></i>
+                                </a>
+                            </div>
+                            <ul class="collapse pr-2" data-parent="#accordionfiltering" id="category_filter3">
+                                <form class="py-3 px-2 dir-rtl" action="">
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input checked="" type="checkbox" id="filter19" name="filter1">
+                                            <label class="text-sm" for="filter19">سایت تک صفحه ای</label>
+                                        </div>
+                                        <p class="m-0 pl-1">107</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter20" name="filter1">
+                                            <label class="text-sm" for="filter20">سایت چند منظوره</label>
+                                        </div>
+                                        <p class="m-0 pl-1">18</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter21" name="filter1">
+                                            <label class="text-sm" for="filter21">سایت تجاری و شرکتی</label>
+                                        </div>
+                                        <p class="m-0 pl-1">81</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter22" name="filter1">
+                                            <label class="text-sm" for="filter22">سایت نمونه کار و گالری</label>
+                                        </div>
+                                        <p class="m-0 pl-1">667</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter23" name="filter1">
+                                            <label class="text-sm" for="filter23">سایت موزیک فیلم</label>
+                                        </div>
+                                        <p class="m-0 pl-1">34</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter24" name="filter1">
+                                            <label class="text-sm" for="filter24">سایت شخصی</label>
+                                        </div>
+                                        <p class="m-0 pl-1">22</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter25" name="filter1">
+                                            <label class="text-sm" for="filter25">سایت املاک </label>
+                                        </div>
+                                        <p class="m-0 pl-1">227</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter26" name="filter1">
+                                            <label class="text-sm" for="filter26">سایت هتل و رستوران</label>
+                                        </div>
+                                        <p class="m-0 pl-1">17</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter27" name="filter1">
+                                            <label class="text-sm" for="filter27">سایت هاستینگ</label>
+                                        </div>
+                                        <p class="m-0 pl-1">117</p>
+
+                                    </div>
+                                </form>
+
+                            </ul>
+                        </li>
+                        <li class="shadow-sm border-radius text-center py-3 mt-3 height-filtering">
+                            <div class="d-flex align-items-center dir-rtl">
+                                <a class="d-flex justify-content-between mr-3 w-100" href="" data-toggle="collapse" data-target="#category_filter4">
+                                    <p class="m-0 title-blog">قالب Psd</p>
+                                    <i class="ti-angle-up mr-auto ml-3 title-blog"></i>
+                                </a>
+                            </div>
+                            <ul class="collapse pr-2" data-parent="#accordionfiltering" id="category_filter4">
+                                <form class="py-3 px-2 dir-rtl" action="">
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input checked="" type="checkbox" id="filter28" name="filter1">
+                                            <label class="text-sm" for="filter28">سایت تک صفحه ای</label>
+                                        </div>
+                                        <p class="m-0 pl-1">107</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter29" name="filter1">
+                                            <label class="text-sm" for="filter29">سایت چند منظوره</label>
+                                        </div>
+                                        <p class="m-0 pl-1">18</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter30" name="filter1">
+                                            <label class="text-sm" for="filter30">سایت تجاری و شرکتی</label>
+                                        </div>
+                                        <p class="m-0 pl-1">81</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter31" name="filter1">
+                                            <label class="text-sm" for="filter31">سایت نمونه کار و گالری</label>
+                                        </div>
+                                        <p class="m-0 pl-1">667</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter32" name="filter1">
+                                            <label class="text-sm" for="filter32">سایت موزیک فیلم</label>
+                                        </div>
+                                        <p class="m-0 pl-1">34</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter33" name="filter1">
+                                            <label class="text-sm" for="filter33">سایت شخصی</label>
+                                        </div>
+                                        <p class="m-0 pl-1">22</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter34" name="filter1">
+                                            <label class="text-sm" for="filter34">سایت املاک </label>
+                                        </div>
+                                        <p class="m-0 pl-1">227</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter35" name="filter1">
+                                            <label class="text-sm" for="filter35">سایت هتل و رستوران</label>
+                                        </div>
+                                        <p class="m-0 pl-1">17</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div class="check-filter">
+                                            <input type="checkbox" id="filter36" name="filter1">
+                                            <label class="text-sm" for="filter36">سایت هاستینگ</label>
+                                        </div>
+                                        <p class="m-0 pl-1">117</p>
+
+                                    </div>
+                                </form>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between pb-3 mt-4">
+                    <strong class="text-title">محدودیت قیمت </strong>
+                </div>
+                <div class="border-bottom-green"></div>
+                <form action="#">
+                    <div class="d-flex align-items-center py-3">
+                        <input type="text" class="form-control text-sm ml-2" placeholder="از 100.000 ریال">
+                        <input type="text" class="form-control text-sm ml-2" placeholder="تا 5.000.000 ریال">
+                        <button class="btn btn-green btn-sm"><i class="ti-arrow-left text-white"></i></button>
+                    </div>
+                </form>
+
+                <div class="d-flex align-items-center justify-content-between pb-3 mt-3">
+                    <strong class="text-title">برچسب ها </strong>
+                </div>
+                <div class="border-bottom-green"></div>
+                <li class="shadow-sm border-radius text-center mt-3 height-filtering">
+                    <form class="py-2 px-2 dir-rtl" action="">
+                        <div class="d-flex align-items-center justify-content-between my-2">
+                            <div class="check-filter">
+                                <input checked="" type="checkbox" id="filter37" name="filter1">
+                                <label class="text-sm" for="filter37">سایت تک صفحه ای</label>
+                            </div>
+                            <p class="m-0 pl-1">107</p>
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-2">
+                            <div class="check-filter">
+                                <input type="checkbox" id="filter38" name="filter1">
+                                <label class="text-sm" for="filter38">سایت چند منظوره</label>
+                            </div>
+                            <p class="m-0 pl-1">18</p>
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-2">
+                            <div class="check-filter">
+                                <input type="checkbox" id="filter39" name="filter1">
+                                <label class="text-sm" for="filter39">سایت تجاری و شرکتی</label>
+                            </div>
+                            <p class="m-0 pl-1">81</p>
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-2">
+                            <div class="check-filter">
+                                <input type="checkbox" id="filter40" name="filter1">
+                                <label class="text-sm" for="filter40">سایت نمونه کار و گالری</label>
+                            </div>
+                            <p class="m-0 pl-1">667</p>
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-2">
+                            <div class="check-filter">
+                                <input type="checkbox" id="filter41" name="filter1">
+                                <label class="text-sm" for="filter41">سایت موزیک فیلم</label>
+                            </div>
+                            <p class="m-0 pl-1">34</p>
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-2">
+                            <div class="check-filter">
+                                <input type="checkbox" id="filter42" name="filter1">
+                                <label class="text-sm" for="filter42">سایت شخصی</label>
+                            </div>
+                            <p class="m-0 pl-1">22</p>
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-2">
+                            <div class="check-filter">
+                                <input type="checkbox" id="filter43" name="filter1">
+                                <label class="text-sm" for="filter43">سایت املاک </label>
+                            </div>
+                            <p class="m-0 pl-1">227</p>
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-2">
+                            <div class="check-filter">
+                                <input type="checkbox" id="filter44" name="filter1">
+                                <label class="text-sm" for="filter44">سایت هتل و رستوران</label>
+                            </div>
+                            <p class="m-0 pl-1">17</p>
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-2">
+                            <div class="check-filter">
+                                <input type="checkbox" id="filter45" name="filter1">
+                                <label class="text-sm" for="filter45">سایت هاستینگ</label>
+                            </div>
+                            <p class="m-0 pl-1">117</p>
+
+                        </div>
+                    </form>
+
+                </li>
+            </div>
+            <div class="col-12 col-md-8 col-lg-9 order-0 order-md-1 h-100">
+                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                    <div class="d-flex align-items-center flex-wrap hover-filter pb-calc pt-3 pt-lg-0">
+                        <p class="m-0 text-md  ml-2">مرتب سازی بر اساس : </p>
+                        <div class="d-none d-lg-block">
+                            <a class=" px-2 py-2 ml-1 text-sm active-filter" href="#">پرفروش ترین</a>
+                            <a class=" px-2 py-2 ml-1 text-sm" href="#">جدیدترین</a>
+                            <a class=" px-2 py-2 ml-1 text-sm" href="#">محبوب ترین</a>
+                            <a class=" px-2 py-2 ml-1 text-sm" href="#">ارزان ترین</a>
+                            <a class=" px-2 py-2 ml-1 text-sm" href="#">گران ترین</a>
+                            <a class=" px-2 py-2 ml-1 text-sm" href="#">رایگان</a>
+                        </div>
+                        <div class="btn-group d-block d-lg-none">
+                            <button class="btn bg-transparent btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                فیلتر ها
+                            </button>
+                            <div class="dropdown-menu text-right">
+                                <a class="dropdown-item" href="#">پرفروش ترین</a>
+                                <a class=" dropdown-item text-sm" href="#">جدیدترین</a>
+                                <a class=" dropdown-item  text-sm" href="#">محبوب ترین</a>
+                                <a class=" dropdown-item text-sm" href="#">ارزان ترین</a>
+                                <a class=" dropdown-item  text-sm" href="#">گران ترین</a>
+                                <a class=" dropdown-item  text-sm" href="#">رایگان</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <strong class="text-title pb-2">نمایش {{ page_obj.number }} از {{ page_obj.paginator.num_pages }} صفحه</strong>
+                </div>
+
+
+                <div class="border-bottom-green"></div>
+                <div class="d-flex flex-wrap w-100 row m-0">
+                   {% for product in object_list  %}
+                        <div class="col-lg-4 col-md-12 col-sm-6 col-12 py-1">
+                        <div class="box shadow-sm">
+                            <img src="{{ product.image.url }}" class="img-fluid" alt="">
+                            <a href="{{ product.get_absolute_url }}">
+                                <h2 class="text-title mr-3 mt-3"> {{ product.title }}</h2>
+                            </a>
+                            <div class="d-flex justify-content-between p-3">
+                                <div class="">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/category.svg" alt="">
+                                        <p class="mr-2 text-sm text-gray">{{ product.type }} </p>
+                                    </div>
+                                    <p class="mt-2 text-sm text-gray">طراح قالب :   {{ product.owner }}</p>
+                                </div>
+
+                                <div class="d-flex flex-column justify-content-center">
+
+                                    <h2 class="price mt-auto text-left text-lg">{{ product.price }} تومان</h2>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap">
+                                <div class="col-6 ">
+                                    <div class="row justify-content-around h-100 align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/eye.svg" class="img-sm" alt="">
+                                            <span class="text-gray mr-2 text-v-sm">2</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/download.svg" class="img-sm" alt="">
+                                            <span class="text-gray mr-2 text-v-sm">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 ">
+                                    <div class="row h-100 align-content-end justify-content-end">
+                                        <a href="#" class="btn btn-sm text-md add-to-cart-btn px-3 py-2">افزودن به
+                                            سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   {% endfor %}
+
+
+                </div>
+
+                <!--pagination-->
+                <div class="border-header-title my-5">
+                    <div class="title px-0 mt-0 mt-sm-2">
+                        <ul class="pagination">
+                            {% if page_obj.has_previous %}
+
+
+                            <li >
+                                <a href="?page={{ page_obj.previous_page_number }}">
+                                   قبلی
+
+                                </a>
+                            </li>
+                            {% endif %}
+                              {% for page in paginator.page_range %}
+                                {% if page == page_obj.number %}
+                                     <li >
+                                        <a class="active" href="?page={{ page }}">
+                                            {{ page }}
+
+                                        </a>
+                                    </li>
+                                {% else %}
+                                  <li >
+                                      <a  href="?page={{ page }}">
+                                          {{ page }}
+
+                                      </a>
+                                  </li>
+                                  {% endif %}
+                                {% endfor %}
+{#                         <li><a href="#"><i class="fa fa-angle-left"></i></a></li>#}
+                             {% if page_obj.has_next %}
+                                <li><a href="?page={{ page_obj.next_page_number }}">بعدی</a></li>
+
+                             {% endif %}
+
+
+
+
+
+
+
+
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.566" height="21.65" viewBox="0 0 21.566 21.65">
+  <g id="add-friend" transform="translate(-1)">
+    <path id="Path_453" data-name="Path 453" d="M114.905,9.81a4.905,4.905,0,1,1,4.905-4.905A4.911,4.911,0,0,1,114.905,9.81Z" transform="translate(-104.391)" fill="#6ba229"/>
+    <g id="Group_422" data-name="Group 422" transform="translate(1 8.965)">
+      <g id="Group_421" data-name="Group 421" transform="translate(0 1.062)">
+        <path id="Path_454" data-name="Path 454" d="M12.417,240.5a5.674,5.674,0,0,1,.833-2.967,6.16,6.16,0,0,1-6.179-.41A9.534,9.534,0,0,0,1,246v2.114a.634.634,0,0,0,.634.634h17.76a.634.634,0,0,0,.634-.634V246c0-.038,0-.076,0-.114a5.708,5.708,0,0,1-7.61-5.383Z" transform="translate(-1 -237.126)" fill="#6ba229"/>
+      </g>
+      <path id="Path_455" data-name="Path 455" d="M305.44,212a4.44,4.44,0,1,0,4.44,4.44A4.445,4.445,0,0,0,305.44,212Zm1.269,5.074h-.634v.634a.634.634,0,1,1-1.269,0v-.634h-.634a.634.634,0,0,1,0-1.269h.634v-.634a.634.634,0,1,1,1.269,0v.634h.634a.634.634,0,1,1,0,1.269Z" transform="translate(-288.314 -212)" fill="#6ba229"/>
+    </g>
+  </g>
+</svg>

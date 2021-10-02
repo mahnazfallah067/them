@@ -1,0 +1,36 @@
+.text-gray {
+    color: #707070 !important;
+}
+
+.bg-light-cart {
+    background-color: #F2F2F2;
+}
+
+.bg-comment {
+    background-color: #F5F5F5;
+}
+
+.bg-gray {
+    background-color: #F5F5F5;
+}
+
+.bg-gray-dark {
+    background-color: #EEEEEE;
+}
+
+.bg-head-blog {
+    background-color: #F2F2F2;
+}
+
+.bg-green-light {
+    background: #DEF8DB
+}
+
+.badge-success {
+    background: #80FF72 !important;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1 !important;
+}

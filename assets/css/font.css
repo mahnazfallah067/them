@@ -1,0 +1,92 @@
+@font-face {
+    font-family: shabnam;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/Shabnam-Medium.eot');
+    src: url('../fonts/Shabnam-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Shabnam-Medium.ttf') format('truetype'),
+    url('../fonts/Shabnam-Medium.woff') format('woff'),
+    url('../fonts/Shabnam-Medium.woff2') format('woff2');
+}
+
+.text-sm {
+    font-size: .7rem;
+}
+
+.text-md {
+    font-size: .9rem;
+}
+
+.text-lg {
+    font-size: 1.4rem;
+}
+
+.text-large {
+    font-size: 1.7rem;
+
+}
+
+.text-title {
+    font-size: .9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.title-blog {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.body-blog {
+    font-size: .75rem;
+}
+
+.price {
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.discount {
+    font-size: .7rem;
+    color: red;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.text-red {
+    color: #FE4F1A;
+}
+
+.text-green {
+    color: #6BA229;
+}
+
+a:hover.text-green {
+    color: #446c1c !important;
+}
+
+.btn-green {
+    background-color: #6BA229;
+    color: white;
+}
+
+.text-single {
+    white-space: nowrap;
+}
+
+.text-v-sm {
+    font-size: .7rem;
+    line-height: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .text-title {
+        font-size: 1rem;
+    }
+
+    .title-xl {
+        font-size: 1.5rem;
+    }
+}
